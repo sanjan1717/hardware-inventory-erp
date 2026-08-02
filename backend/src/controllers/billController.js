@@ -1,5 +1,5 @@
 const pool = require("../config/db");
-const { generateInvoice } = require("../services/PdfService");
+const { generateInvoice } = require("../services/pdfService");
 
 const createBill = async (req, res) => {
 
