@@ -1,0 +1,36 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,
+body,
+#root{
+  width:100%;
+  min-height:100%;
+  font-family:'Inter',sans-serif;
+  background:#F8FAFC;
+}
+
+body{
+  overflow-y:auto;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#CBD5E1;
+  border-radius:8px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#94A3B8;
+}
