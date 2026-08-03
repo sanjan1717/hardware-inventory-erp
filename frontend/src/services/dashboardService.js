@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://hardware-inventory-erp.onrender.com",
+  baseURL: "https://hardware-inventory-erp.onrender.com/api",
 });
 
 // Attach JWT Token automatically

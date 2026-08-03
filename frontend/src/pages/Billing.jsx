@@ -51,6 +51,7 @@ const formatCurrency = (amount) => {
     maximumFractionDigits: 2,
   });
 };
+const API_BASE = "https://hardware-inventory-erp.onrender.com";
 const [snackbar, setSnackbar] = useState({
   open: false,
   message: "",
@@ -62,7 +63,7 @@ const [successOpen, setSuccessOpen] = useState(false);
 
 const [invoiceNo, setInvoiceNo] = useState("");
 const [openCustomerDialog, setOpenCustomerDialog] = useState(false);
-
+const invoiceUrl = `${API_BASE}${bill.data.invoice_url}`;
 const [customerForm, setCustomerForm] = useState({
   customer_name: "",
   phone: "",
@@ -244,7 +245,7 @@ const handlePayment = async () => {
           setInvoiceNo(bill.data.bill_number);
 
           setInvoiceUrl(
-            `http://localhost:5000${bill.data.invoice_url}`
+            `https://hardware-inventory-erp.onrender.com${bill.data.invoice_url}`
           );
 
           // Show Success Dialog
