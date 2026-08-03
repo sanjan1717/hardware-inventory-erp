@@ -63,7 +63,6 @@ const [successOpen, setSuccessOpen] = useState(false);
 
 const [invoiceNo, setInvoiceNo] = useState("");
 const [openCustomerDialog, setOpenCustomerDialog] = useState(false);
-const invoiceUrl = `${API_BASE}${bill.data.invoice_url}`;
 const [customerForm, setCustomerForm] = useState({
   customer_name: "",
   phone: "",
