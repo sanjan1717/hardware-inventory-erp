@@ -11,7 +11,7 @@ async function startServer() {
     console.log("✅ PostgreSQL Connected Successfully");
 
     app.listen(PORT, () => {
-      console.log(`🚀 Server running on http://localhost:${PORT}`);
+      console.log(`🚀 Server running on https://hardware-inventory-erp.onrender.com:${PORT}`);
     });
 
   } catch (error) {
