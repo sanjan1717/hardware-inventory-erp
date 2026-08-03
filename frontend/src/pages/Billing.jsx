@@ -180,7 +180,7 @@ const generateBill = async () => {
       setInvoiceNo(res.data.bill_number);
 
 setInvoiceUrl(
-  `http://localhost:5000${res.data.invoice_url}`
+  `https://hardware-inventory-erp.onrender.com${res.data.invoice_url}`
 );
 
 setSuccessOpen(true);
