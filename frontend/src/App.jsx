@@ -12,7 +12,7 @@ import StockInward from "./pages/StockInward";
 import ProtectedRoute from "./components/ProtectedRoute";
 import MainLayout from "./layouts/MainLayout";
 import Stores from "./pages/Stores";
-import Users from "./pages/Users";
+import Users from "./pages/users";
 
 function App() {
   return (
